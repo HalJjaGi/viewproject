@@ -1,0 +1,46 @@
+#notice #noticeTable td {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#notice #noticeTable tr:hover {
+    opacity: 0.5;
+}
+
+#qna #qnaTable td {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#qna #qnaTable tr:hover {
+    opacity: 0.5;
+}
+
+
+/*겉보기용*/
+#mnoticeTable td {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#mnoticeTable tr:hover {
+    opacity: 0.5;
+}
+
+#mqnaTable td {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#mqnaTable tr:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+#participationContainer hr {
+    width: 100%;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>One Page Wonder - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  <link href="css/mystyle.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">스마트 코딩대회</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notice.html">공지사항</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="qna.html">Q&A</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">로그인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#participant.html">참가신청</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0">참가신청</h1>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+
+
+  <section>
+    <div class="container">
+      <!--개인정보 동의입력시 주의사항
+개인정보활용동의 표시하기
+나이는 만 나이를 숫자로 기입
+가장 위의 칸에 대표정보입력하기
+전화번호는 - 없이 입력
+예) 01011112222
+
+개인정보 활용 동의,,,,,  팀명, 지역, 나이, 성별, 이름, 이메일, 전화번호-->
+      <div id="participationContainer" class="col-md-8 offset-md-2">
+        <p class="w-100 m-1">나이는 만 나이를 숫자로 입력해 주세요<br>
+          가장 위의 칸에 팀장정보를 입력해 주세요<br>
+          (개인 참가일 경우 팀장정보만 입력해 주세요)<br>
+          밑의 +버튼을 눌러 인원을 추가하고 -버튼을 눌러 취소할 수 있습니다.<br>
+          전화번호는 -를 빼고 입력해 주세요<br>
+          예) 01011112222</p>
+        <label class="checkbox-inline w-100 m-1">
+          <input type="checkbox" id="checkContract"> 개인정보활용동의
+          <button class="btn btn-secondary" id="showContract">자세히 보기</button>
+        </label>
+        <p id="contract" class="w-100 m-1">대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명대충설명ㅍㅍ</p>
+        <input class="form-control w-100 m-1" type="text" placeholder="팀명">
+        <div id="participant" class="w-100">
+          <hr>
+          <select class="form-control m-1" name="location">
+            <option disabled selected>팀장 지역</option>
+            <option value="서울특별시">서울특별시</option>
+            <option value="부산광역시">부산광역시</option>
+            <option value="대구광역시">대구광역시</option>
+            <option value="인천광역시">인천광역시</option>
+            <option value="광주광역시">광주광역시</option>
+            <option value="대전광역시">대전광역시</option>
+            <option value="울산광역시">울산광역시</option>
+            <option value="세종특별자치시">세종특별자치시</option>
+            <option value="경기도">경기도</option>
+            <option value="강원도">강원도</option>
+            <option value="충청북도">충청북도</option>
+            <option value="충청남도">충청남도</option>
+            <option value="전라북도">전라북도</option>
+            <option value="전라남도">전라남도</option>
+            <option value="경상북도">경상북도</option>
+            <option value="경상남도">경상남도</option>
+            <option value="제주특별자치도">제주특별자치도</option>
+          </select>
+          <input class="form-control m-1" type="text" placeholder="팀장 나이" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+          <select class="form-control m-1">
+            <option disabled selected>팀장 성별</option>
+            <option>남자</option>
+            <option>여자</option>
+          </select>
+          <input class="form-control m-1" type="text" placeholder="팀장 이름">
+          <input class="form-control m-1" type="text" placeholder="팀장 이메일">
+          <input class="form-control m-1" type="text" placeholder="팀장 전화번호" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+        </div>
+        <hr>
+        <button class="btn btn-secondary w-100 m-1" id="plus">+</button>
+        <button class="btn btn-secondary w-100 m-1" id="submit">제출</button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<script src="app.js"></script>
+</html>

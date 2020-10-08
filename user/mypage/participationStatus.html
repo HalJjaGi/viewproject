@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>One Page Wonder - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/one-page-wonder.min.css" rel="stylesheet">
+  <link href="../css/mystyle.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="mindex.html">스마트 코딩대회</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mindex.html">소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mnotice.html">공지사항</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mqna.html">Q&A</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mypage.html">내 정보</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h2 class="masthead-subheading mb-0">참가현황</h2>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <input class="form-control w-100 m-1" type="text" placeholder="팀명" value="1번팀">
+            <div id="participant" class="w-100">
+              <hr>
+              <select class="form-control m-1" name="location">
+                <option disabled>팀장 지역</option>
+                <option value="서울특별시" selected>서울특별시</option>
+                <option value="부산광역시">부산광역시</option>
+                <option value="대구광역시">대구광역시</option>
+                <option value="인천광역시">인천광역시</option>
+                <option value="광주광역시">광주광역시</option>
+                <option value="대전광역시">대전광역시</option>
+                <option value="울산광역시">울산광역시</option>
+                <option value="세종특별자치시">세종특별자치시</option>
+                <option value="경기도">경기도</option>
+                <option value="강원도">강원도</option>
+                <option value="충청북도">충청북도</option>
+                <option value="충청남도">충청남도</option>
+                <option value="전라북도">전라북도</option>
+                <option value="전라남도">전라남도</option>
+                <option value="경상북도">경상북도</option>
+                <option value="경상남도">경상남도</option>
+                <option value="제주특별자치도">제주특별자치도</option>
+              </select>
+              <input class="form-control m-1" type="text" placeholder="팀장 나이" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="25">
+              <select class="form-control m-1">
+                <option disabled>팀장 성별</option>
+                <option selected>남자</option>
+                <option>여자</option>
+              </select>
+              <input class="form-control m-1" type="text" placeholder="팀장 이름" value="홍길동">
+              <input class="form-control m-1" type="text" placeholder="팀장 이메일" value="honggildong@naver.com">
+              <input class="form-control m-1" type="text" placeholder="팀장 전화번호" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');", value="01012345678">
+            </div>
+            <hr> 
+            <div id="participant" class="w-100">
+                <hr>
+                <select class="form-control m-1" name="location">
+                  <option disabled>팀장 지역</option>
+                  <option value="서울특별시">서울특별시</option>
+                  <option value="부산광역시">부산광역시</option>
+                  <option value="대구광역시">대구광역시</option>
+                  <option value="인천광역시">인천광역시</option>
+                  <option value="광주광역시" selected>광주광역시</option>
+                  <option value="대전광역시">대전광역시</option>
+                  <option value="울산광역시">울산광역시</option>
+                  <option value="세종특별자치시">세종특별자치시</option>
+                  <option value="경기도">경기도</option>
+                  <option value="강원도">강원도</option>
+                  <option value="충청북도">충청북도</option>
+                  <option value="충청남도">충청남도</option>
+                  <option value="전라북도">전라북도</option>
+                  <option value="전라남도">전라남도</option>
+                  <option value="경상북도">경상북도</option>
+                  <option value="경상남도">경상남도</option>
+                  <option value="제주특별자치도">제주특별자치도</option>
+                </select>
+                <input class="form-control m-1" type="text" placeholder="팀장 나이" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="20">
+                <select class="form-control m-1">
+                  <option disabled>팀장 성별</option>
+                  <option selected>남자</option>
+                  <option>여자</option>
+                </select>
+                <input class="form-control m-1" type="text" placeholder="팀장 이름" value="이순신">
+                <input class="form-control m-1" type="text" placeholder="팀장 이메일" value="leesunsin@naver.com">
+                <input class="form-control m-1" type="text" placeholder="팀장 전화번호" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');", value="010888444">
+              </div>
+              <hr>
+              <div id="participant" class="w-100">
+                <hr>
+                <select class="form-control m-1" name="location">
+                  <option disabled>팀장 지역</option>
+                  <option value="서울특별시">서울특별시</option>
+                  <option value="부산광역시">부산광역시</option>
+                  <option value="대구광역시">대구광역시</option>
+                  <option value="인천광역시">인천광역시</option>
+                  <option value="광주광역시">광주광역시</option>
+                  <option value="대전광역시">대전광역시</option>
+                  <option value="울산광역시">울산광역시</option>
+                  <option value="세종특별자치시">세종특별자치시</option>
+                  <option value="경기도">경기도</option>
+                  <option value="강원도">강원도</option>
+                  <option value="충청북도">충청북도</option>
+                  <option value="충청남도">충청남도</option>
+                  <option value="전라북도">전라북도</option>
+                  <option value="전라남도">전라남도</option>
+                  <option value="경상북도" selected>경상북도</option>
+                  <option value="경상남도">경상남도</option>
+                  <option value="제주특별자치도">제주특별자치도</option>
+                </select>
+                <input class="form-control m-1" type="text" placeholder="팀장 나이" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="15">
+                <select class="form-control m-1">
+                  <option disabled>팀장 성별</option>
+                  <option>남자</option>
+                  <option selected>여자</option>
+                </select>
+                <input class="form-control m-1" type="text" placeholder="팀장 이름" value="신사임당">
+                <input class="form-control m-1" type="text" placeholder="팀장 이메일" value="imsinsa@naver.com">
+                <input class="form-control m-1" type="text" placeholder="팀장 전화번호" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');", value="01022224444">
+              </div>
+              <hr>
+              <input class="form-control m-1" type="text" placeholder="참가코드" autocomplete="off">
+              <button class="btn btn-secondary w-100 m-1" id="edit">적용하기</button>
+              <button class="btn btn-secondary w-100 m-1 backButton">뒤로가기</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<script src="../app.js"></script>
+</html>
